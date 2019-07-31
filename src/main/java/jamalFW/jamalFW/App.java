@@ -28,7 +28,7 @@ public class App {
 	@Test
 	public void myTest() throws InterruptedException {
 
-		navigate("http://www.google.com");
+		navigate("https://www.google.com/");
 	}
 
 	@After
