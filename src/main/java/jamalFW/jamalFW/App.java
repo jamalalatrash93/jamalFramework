@@ -28,10 +28,7 @@ public class App {
 	@Test
 	public void myTest() throws InterruptedException {
 
-//		navigate("");
-//		actionMethod("");
-//		click("");
-
+		navigate("http://www.google.com");
 	}
 
 	@After
