@@ -1,0 +1,46 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+    	System.setProperty("webdriver.chrome.driver", "/Users/jelatrash/Desktop/chromedriver");
+    	WebDriver driver = new ChromeDriver();
+    	//Navigate to web-site
+    	driver.get("http://exam:Exam@dmin@yahoo.com");
+    	driver.get("https://smartbuy-me.com/smartbuystore");
+    	
+    	
+    	Actions action = new Actions(driver);
+    	WebElement element = driver.findElement(By.cssSelector(".full_menu .brands_links a[href='/smartbuystore/smartbuy/en/brands'] i"));
+    	
+        action.moveToElement(element).build().perform();
+        
+        WebElement icon = driver.findElement(By.cssSelector("a[href='/smartbuystore/smartbuy/en/TECNO/Brands/APPLE/c/APPLE'] img"));
+        action.moveToElement(icon).click().build().perform();
+ 
+        Thread.sleep(10000);
+    	driver.quit();
+
+    	Select
+    	Select dropdown = new Select(driver.findElement(By.id("designation")));
+
+    	dropdown.selectByVisibleText("Programmer ");
+
+		dropdown.selectByIndex(1);
+		
+		
+		dep******
+				<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.0.0-alpha-1</version>
+	</dependency>
+		
